@@ -72,11 +72,11 @@ body {
 
 .product-info {
     display: grid;
-    padding: var(--padding) calc(var(--padding) * 1.75);
+    padding: calc(var(--padding) * 1.75) calc(var(--padding) * 1.75);
     gap: 1rem;
 }
 
-@media (max-width: 537px) {
+@media (max-width: 650px) {
     .product-info {
         padding: var(--padding);
     }
