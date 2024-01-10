@@ -58,7 +58,7 @@ body {
     background-color: var(--clr-neutral-100);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 40rem;
+    max-width: 37rem;
     margin: 1rem;
     overflow: hidden;
 }
@@ -72,11 +72,12 @@ body {
 
 .product-info {
     display: grid;
-    padding: calc(var(--padding) * 1.75) calc(var(--padding) * 1.75);
+    padding: calc(var(--padding) * 1.25) calc(var(--padding) * 1.5);
     gap: 1rem;
+    transition: padding 200ms;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 622px) {
     .product-info {
         padding: var(--padding);
     }
@@ -142,6 +143,7 @@ body {
     font-size: calc(var(--fs-p) * 0.9);
     cursor: pointer;
     gap: 0.75rem;
+    font-weight: var(--fw-bold);
 }
 
 .cart-btn:is(:hover, :focus) {
